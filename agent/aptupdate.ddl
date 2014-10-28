@@ -40,8 +40,8 @@ end
 action 'list', :description => "List all repositories available for update" do 
 
     output :repositories
-           :description => 'Repositories'
-           :display_as => 'Respositories'
+           :description => 'Repositories',
+           :display_as => 'Respositories',
            :default => ''
     
 end
