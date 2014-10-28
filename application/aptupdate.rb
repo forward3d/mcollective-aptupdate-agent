@@ -47,8 +47,9 @@ END_OF_USAGE
       def main
         mc = rpcclient("aptupdate")
         
-        if configuration[:action] == 'list'
-          printrpc mc.list(:options => options)
+        responses = mc.list(:options => options)
+        responses.each do |resp|
+          printf("%-40s: %s\n", resp[:sender], resp[:data][:repositories].join(', '))
         end
         
         if configuration[:action] == 'update'

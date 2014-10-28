@@ -23,7 +23,7 @@ module MCollective
         reply[:stdout] = stdout
         reply[:stderr] = stderr
         reply[:exitcode] = exitcode
-        reply[:command_run] = command_run
+        reply[:command_run] = apt_command
         
         if exitcode != 0
           reply.fail! "Apt update failed"
