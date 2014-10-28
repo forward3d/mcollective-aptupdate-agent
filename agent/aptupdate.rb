@@ -1,6 +1,6 @@
 module MCollective
   module Agent
-    class Deploy<RPC::Agent
+    class Aptupdate<RPC::Agent
       
       ALL_REPOSITORIES_COMMAND = "apt-get update"
       

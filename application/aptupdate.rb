@@ -1,6 +1,6 @@
 module MCollective
   class Application
-    class Package<MCollective::Application
+    class Aptupdate<MCollective::Application
       description "Run apt-get update on a specific repository or all repositories"
 
       usage <<-END_OF_USAGE
