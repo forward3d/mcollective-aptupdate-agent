@@ -41,7 +41,7 @@ To update every repository, simply execute the agent without any arguments:
 If you want to update a single repository (for example, maybe you push packages into this repository from
 a build system), then supply the name of the repository as an argument.
 
-    mco aptupdate custom
+    mco aptupdate update custom
 
 ## Packaging
 
