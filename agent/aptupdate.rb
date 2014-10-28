@@ -32,7 +32,7 @@ module MCollective
       end
       
       action "list" do
-        Dir.glob('/etc/apt/sources.list.d/*.list').map {|d| File.basename(d, '.list')}
+        reply[:repositories] = Dir.glob('/etc/apt/sources.list.d/*.list').map {|d| File.basename(d, '.list')}
       end
       
     end
