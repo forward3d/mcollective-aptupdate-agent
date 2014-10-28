@@ -13,7 +13,8 @@ action 'update', :description => 'Run apt-get update on a specific repository or
           :description => 'Repository to run apt-get update on',
           :type        => :string,
           :validation  => '.*',
-          :optional    => true
+          :optional    => true,
+          :maxlength   => 1024
 
     output :command_run,
            :description => 'Actual apt command run',
