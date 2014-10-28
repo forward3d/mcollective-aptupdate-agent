@@ -2,7 +2,7 @@ metadata :name        => 'aptupdate',
          :description => 'Apt updating agent',
          :author      => 'Andy Sykes',
          :license     => 'GPLv2',
-         :version     => '1.0',
+         :version     => '1.1',
          :url         => 'https://github.com/forward3d/mcollective-aptupdate-agent',
          :timeout     => 60
 
