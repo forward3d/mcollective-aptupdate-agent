@@ -39,7 +39,7 @@ end
 
 action 'list', :description => "List all repositories available for update" do 
 
-    output :repositories
+    output :repositories,
            :description => 'Repositories',
            :display_as => 'Repositories',
            :default => ''
